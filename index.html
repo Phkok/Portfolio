@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Portfolio ของฉัน</h1>
+    <nav>
+      <button class="nav-btn" onclick="scrollToSection('certificates')">เกียรติบัตร</button>
+      <button class="nav-btn" onclick="scrollToSection('activities')">กิจกรรม</button>
+      <button class="nav-btn" onclick="scrollToSection('hobbies')">ความชอบ</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="certificates">
+      <h2>เกียรติบัตร</h2>
+      <div class="gallery">
+        <img src="d.jpg" alt="กิจกรรม 1" onclick="openModal(this)">
+        <h3>เข้าร่วมคณิตคิดเร็ว</h3>
+        <img src="b.jpg" alt="กิจกรรม 2" onclick="openModal(this)">
+        <h3>ตอบปัญหาคณิตศาสตร์ เหรียญเงิน</h3>
+        <img src="c.png" alt="กิจกรรม 3" onclick="openModal(this)">
+        <h3>ไปเข้าร่วม Thai-Nichi Admission Center</h3>
+        <img src="a.jpg" alt="เกียรติบัตร 3" onclick="openModal(this)">
+        <h3>เเข่งเวท เหรียญเงิน</h3>
+      </div>
+      </div>
+    </section>
+
+    <section id="activities">
+      <h2>กิจกรรม</h2>
+      <div class="gallery">
+        <img src="g.jpg" alt="กิจกรรม 1" onclick="openModal(this)">
+        <img src="h.jpg" alt="กิจกรรม 2" onclick="openModal(this)">
+        <img src="n.jpg" alt="กิจกรรม 3" onclick="openModal(this)">
+        <img src="m.jpg" alt="เกียรติบัตร 3" onclick="openModal(this)">
+        <img src="q.jpg" alt="เกียรติบัตร 3" onclick="openModal(this)">
+        <img src="v.jpg" alt="เกียรติบัตร 3" onclick="openModal(this)">
+        <img src="z.jpg" alt="เกียรติบัตร 3" onclick="openModal(this)">
+        <img src="o.jpg" alt="เกียรติบัตร 3" onclick="openModal(this)">
+      </div>
+    </section>
+
+    <section id="hobbies">
+      <h2>ความชอบ</h2>
+      <p>ฉันชอบการเขียนโปรแกรม, การเล่นเกม, และการถ่ายภาพ</p>
+      <img src="j.jpg" alt="ภาพกิจกรรมที่ชอบ" onclick="openModal(this)">
+    </section>
+  </main>
+
+  <div id="modal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
